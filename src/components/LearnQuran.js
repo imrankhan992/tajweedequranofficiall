@@ -42,6 +42,7 @@ const learnQuran = [
         subtitle:"Learn Hadis (Course)",
         description:"Learn Hadis course is designed for those who want to learn Hadis. It is a step by step guide for learning Hadis.",
     },
+    // fldj
     {
         id:7,
         image:"/Images/readingQaida.png",
