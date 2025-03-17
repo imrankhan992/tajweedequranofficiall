@@ -7,6 +7,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import required modules
+// import required modules
+
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import OurVision from "./OurVision";
 import LearnQuran from "./LearnQuran.jsx";
@@ -26,7 +28,7 @@ import 'aos/dist/aos.css';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
-
+const [hell, sethell] = useState()
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
