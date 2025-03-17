@@ -10,7 +10,7 @@ const OurVision = () => {
         id="aboutUs"
       >
         <figure>
-          <img src={import.meta.env.BASE_URL+"/TQOA.png"} width={170} height={170} alt="tajweedequranlogo" loading="lazy" />
+          <img src={"/TQOA.png"} width={170} height={170} alt="tajweedequranlogo" loading="lazy" />
         </figure>
         <div className="md:flex text-center    items-start justify-start gap-2" data-aos="fade-up">
           <h3 className="text-xl md:text-2xl">
@@ -61,7 +61,7 @@ const OurVision = () => {
             <div className="w-20 md:w-56 h-20">
               {" "}
               <img
-                src={import.meta.env.BASE_URL+"/Images/icons/ourmission.png"}
+                src={"/Images/icons/ourmission.png"}
                 width={250}
                 height={250}
                 alt=""
@@ -84,7 +84,7 @@ const OurVision = () => {
             <div className="w-20 md:w-56 h-20 ">
               {" "}
               <img
-                src={import.meta.env.BASE_URL+"/Images/icons/quran.png"}
+                src={"/Images/icons/quran.png"}
                 width={200}
                 height={200}
                 alt=""
