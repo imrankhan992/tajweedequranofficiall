@@ -29,11 +29,13 @@ const OurVision = () => {
          
         </div>
       </div>
+      
       {/* second part */}
-      <h1 className="md:text-6xl text-center text-3xl font-semibold mt-10" data-aos="fade-up">
+      <h1 className="md:text-6xl text-center text-3xl font-semibold mt-10 mb-10" data-aos="fade-up">
             In The Name Of Allah <br />
             The Beneficent The Merciful
           </h1>
+          <div className="flex items-center justify-center">  <iframe className="md:w-[60vw] w-full h-[40vh] mb-6  md:h-[60vh]"  src="https://www.youtube.com/embed/uTiMSoi4wfA?si=5wxIbpC59yrLPGe6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
       <div className="grid md:grid-cols-2 px-6 md:px-16 gap-6 items-start justify-center pb-16 md:py-16">
         <div className="text-justify text-lg md:text-xl">
           <h2 className="md:text-5xl text-2xl text-[#023847] mb-3 font-semibold underline" >About us</h2>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {HashLoader} from "react-spinners"
+import { HashLoader } from "react-spinners"
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -28,7 +28,7 @@ import 'aos/dist/aos.css';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
-const [hell, sethell] = useState()
+  const [hell, sethell] = useState()
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -41,61 +41,63 @@ const [hell, sethell] = useState()
     });
   }, []);
   return (
-   <>
-   {
-    loading ?(<div className="max-h-screen min-h-screen w-full flex items-center justify-center flex-col"><HashLoader color="#014B5E"/> Loading...</div>):(<>
-    
-    <div className="relative w-full" id="home">
-      <WhatsAppButton/>
-   
-     <ChatIcon/>
-    
-      <Header />
+    <>
+      {
+        loading ? (<div className="max-h-screen min-h-screen w-full flex items-center justify-center flex-col"><HashLoader color="#014B5E" /> Loading...</div>) : (<>
 
-     
-       <div className="w-full h-full relative mb-16">
-       <Swiper
-          cssMode={true}
-          navigation={true}
-          pagination={true}
-          mousewheel={true}
-          keyboard={true}
-          autoplay={
-            {delay: 5000,
-            disableOnInteraction: false,}
-          }
-          modules={[Navigation, Pagination,Autoplay]}
-        >
-          <SwiperSlide>
-            {" "}
-            <img loading="lazy" src={"/Images/Carousals/heropage.png"} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            {" "}
-            <img loading="lazy" src={"/Images/Carousals/heropage1.png"} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            {" "}
-            <img loading="lazy"  src={"/Images/Carousals/heropage2.jpg"} alt="" />
-          </SwiperSlide>
-        </Swiper>
-     
-      </div>
-      {/* <img loading="lazy" src={"/Images/Carousals/sous-slider.png"}  alt="" /> */}
-      
-      <OurVision />
-      <LearnQuran />
-      <HowToEnroll />
-      <ServiceOffer />
-      <ReasonPeopleChoseUs/>
-      {/* <FeedbackVideos /> */}
-      <StudentsReviews />
-      <ContactUs/>
-      <Footer />
-    </div>
-    </>)
-   }
-   </>
+          <div className="relative w-full" id="home">
+            <WhatsAppButton />
+
+            <ChatIcon />
+
+            <Header />
+
+
+            <div className="w-full h-full relative mb-16">
+              <Swiper
+                cssMode={true}
+                navigation={true}
+                pagination={true}
+                mousewheel={true}
+                keyboard={true}
+                autoplay={
+                  {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                  }
+                }
+                modules={[Navigation, Pagination, Autoplay]}
+              >
+                <SwiperSlide>
+                  {" "}
+                  <img loading="lazy" src={"/Images/Carousals/heropage.png"} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <img loading="lazy" src={"/Images/Carousals/heropage1.png"} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <img loading="lazy" src={"/Images/Carousals/heropage2.jpg"} alt="" />
+                </SwiperSlide>
+              </Swiper>
+
+            </div>
+            {/* <img loading="lazy" src={"/Images/Carousals/sous-slider.png"}  alt="" /> */}
+         
+            <OurVision />
+            <LearnQuran />
+            <HowToEnroll />
+            <ServiceOffer />
+            <ReasonPeopleChoseUs />
+            {/* <FeedbackVideos /> */}
+            <StudentsReviews />
+            <ContactUs />
+            <Footer />
+          </div>
+        </>)
+      }
+    </>
   );
 };
 
