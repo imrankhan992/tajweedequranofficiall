@@ -70,15 +70,15 @@ const Home = () => {
               >
                 <SwiperSlide>
                   {" "}
-                  <img loading="lazy" src={"/Images/Carousals/heropage.png"} alt="" />
+                  <img loading="lazy" src={"https://res.cloudinary.com/dbcopekhr/image/upload/v1742402904/heropage1_wkmfqm.png"} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
                   {" "}
-                  <img loading="lazy" src={"/Images/Carousals/heropage1.png"} alt="" />
+                  <img loading="lazy" src={"https://res.cloudinary.com/dbcopekhr/image/upload/v1742402902/heropage2_smrxl0.jpg"} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
                   {" "}
-                  <img loading="lazy" src={"/Images/Carousals/heropage2.jpg"} alt="" />
+                  <img loading="lazy" src={"https://res.cloudinary.com/dbcopekhr/image/upload/v1742402900/heropage_omehvg.png"} alt="" />
                 </SwiperSlide>
               </Swiper>
 
