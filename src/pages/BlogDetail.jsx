@@ -70,7 +70,6 @@ export default function BlogDetail() {
       </Layout>
     );
   }
-console.log(frontMatter.image);
   return (
     <Layout>
       <div 
