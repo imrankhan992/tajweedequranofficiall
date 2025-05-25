@@ -1,0 +1,67 @@
+import React from "react";
+import MobileDrawer from "./Drawer/MobileDrawer";
+import { Link } from "react-router-dom";
+import tajweedQuranLogo from "../assets/TQOA_logo.png"
+const Header = () => {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <header className="sticky top-0 z-50 bg-[#214C5E] shadow-md">
+      <nav className="container mx-auto flex items-center justify-between p-4">
+        {/* Logo */}
+        <Link to={"/"} className="flex-shrink-0">
+          <img
+            src={tajweedQuranLogo}
+            width={70}
+            height={70}
+            alt="Tajweed e Quran Online Academy logo"
+            className="object-contain"
+          />
+        </Link>
+
+        {/* Desktop Nav */}
+        <ul className="hidden md:flex items-center gap-6 text-white font-semibold text-sm lg:text-base">
+          <li className="hover:underline cursor-pointer" onClick={() => scrollToSection("home")}>
+            Home
+          </li>
+          <li className="hover:underline cursor-pointer" onClick={() => scrollToSection("courses")}>
+            Courses
+          </li>
+          <li className="hover:underline cursor-pointer" onClick={() => scrollToSection("aboutUs")}>
+            About Us
+          </li>
+          <li className="hover:underline cursor-pointer" onClick={() => scrollToSection("contactUs")}>
+            Contact Us
+          </li>
+          <li className="hover:underline cursor-pointer" onClick={() => scrollToSection("FAQ")}>
+            FAQ
+          </li>
+          <li className="hover:underline cursor-pointer" >
+          <Link to={"/blogs"}>  Blogs</Link>
+          </li>
+          <li>
+            <button
+              className="bg-[#C28336] text-white px-4 py-2 rounded-full hover:brightness-110 transition"
+              onClick={() => scrollToSection("courses")}
+              aria-label="Request a demo class"
+            >
+              Request Demo Class
+            </button>
+          </li>
+        </ul>
+
+        {/* Mobile Nav */}
+        <div className="md:hidden">
+          <MobileDrawer />
+        </div>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
