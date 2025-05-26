@@ -5,10 +5,10 @@ author: "Tajweed e Quran Official"
 date: 2025-05-25
 slug: "what-is-tajweed"
 tags: ["Tajweed", "Quran", "Islam", "Learn Quran", "Tajweed e Quran Official"]
-image: "../../public/Images/Blogs/tajweed-rules.avif"
+image: "/Images/Blogs/tajweed-rules.avif"
 ---
 
-![Tajweed Quran](../../public/Images/Blogs/TajveedRuleDocumentImagedesign-03.png)
+![Tajweed Quran](/Images/Blogs/TajveedRuleDocumentImagedesign-03.png)
 
 > _"And recite the Qur’an with measured recitation."_  
 > — **Surah Al-Muzzammil, Ayah 4**
@@ -53,7 +53,7 @@ When recited with Tajweed, the Quran **touches hearts** and **soothes the soul**
 
 ### Common Examples of Tajweed Rules
 
-![Makharij Chart](../../public/Images/Blogs/TajweedeQuran.avif)
+![Makharij Chart](/Images/Blogs/TajweedeQuran.avif)
 
 | Rule | Description | Example |
 |------|-------------|---------|
