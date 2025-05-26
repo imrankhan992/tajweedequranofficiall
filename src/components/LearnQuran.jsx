@@ -12,7 +12,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import learnQuran from './LearnQuran';
 const LearnQuran = () => {
   return (
-    <div className='md:px-16 px-4 text-center' data-aos="flip-left">
+    <div className='md:px-16 px-4 text-center' >
          <div className='mb-6'><h1 className="md:text-4xl text-2xl font-bold text-[#014B5E] py-2">Start Learning Quran</h1>
               <span  className="mb-7 font-bold text-xl  text-black">
               Contact now for a free trial lesson for you or your kid.

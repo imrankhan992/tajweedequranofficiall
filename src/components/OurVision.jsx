@@ -12,7 +12,7 @@ const OurVision = () => {
         <figure>
           <img src={"/TQOA.png"} width={170} height={170} alt="tajweedequranlogo" loading="lazy" />
         </figure>
-        <div className="md:flex text-center    items-start justify-start gap-2" data-aos="fade-up">
+        <div className="md:flex text-center    items-start justify-start gap-2" >
           <h3 className="text-xl md:text-2xl">
             Welcome to the
            
@@ -31,7 +31,7 @@ const OurVision = () => {
       </div>
       
       {/* second part */}
-      <h1 className="md:text-6xl text-center text-3xl font-semibold mt-10 mb-10" data-aos="fade-up">
+      <h1 className="md:text-6xl text-center text-3xl font-semibold mt-10 mb-10" >
             In The Name Of Allah <br />
             The Beneficent The Merciful
           </h1>

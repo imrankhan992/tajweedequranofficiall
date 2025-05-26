@@ -27,7 +27,7 @@ const StudentsReviews = () => {
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
-        navigation={true}
+      
         pagination={true}
        
         modules={[Navigation, Pagination, Autoplay]}
