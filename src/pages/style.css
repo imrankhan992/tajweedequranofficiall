@@ -16,7 +16,7 @@
 
 @media (max-width: 768px) {
   .background-tajweed-quran {
-    height: 23vh !important;
+    height: auto !important;
     background-image: url("../assets/blogsmain.avif");
   }
     
