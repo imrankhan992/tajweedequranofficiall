@@ -27,19 +27,19 @@ const Header = () => {
         {/* Desktop Nav */}
         <ul className="hidden md:flex items-center gap-6 text-white font-semibold text-sm lg:text-base">
           <li className="hover:underline cursor-pointer" onClick={() => scrollToSection("home")}>
-            Home
+          <Link to={"/"}>Home</Link>
           </li>
           <li className="hover:underline cursor-pointer" onClick={() => scrollToSection("courses")}>
-            Courses
+            <Link to={"/#courses"}>Courses</Link>
           </li>
           <li className="hover:underline cursor-pointer" onClick={() => scrollToSection("aboutUs")}>
-            About Us
+           <Link to={"/#aboutUs"}>About Us</Link>
           </li>
           <li className="hover:underline cursor-pointer" onClick={() => scrollToSection("contactUs")}>
-            Contact Us
+            <Link to={"/#contactUs"}>Contact Us</Link>
           </li>
           <li className="hover:underline cursor-pointer" onClick={() => scrollToSection("FAQ")}>
-            FAQ
+            <Link to={"/#FAQ"}>FAQ</Link>
           </li>
           <li className="hover:underline cursor-pointer" >
           <Link to={"/blogs"}>  Blogs</Link>
@@ -50,7 +50,7 @@ const Header = () => {
               onClick={() => scrollToSection("courses")}
               aria-label="Request a demo class"
             >
-              Request Demo Class
+             <Link to={"/#courses"}>Request a Demo</Link>
             </button>
           </li>
         </ul>

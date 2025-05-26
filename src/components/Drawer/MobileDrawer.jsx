@@ -56,20 +56,26 @@ const MobileDrawer = () => {
         </div>
       
         <ul className="w-full text-white font-bold text-lg flex flex-col items-center justify-center gap-10 py-10 ">
-          <li className="hover:underline cursor-pointer"  onClick={() => {setOpen(false); scrollToSection("home")}}>Home</li>
+          <li className="hover:underline cursor-pointer"  onClick={() => {setOpen(false); scrollToSection("home")}}><Link to={"/"}>Home</Link></li>
           <li
             className="hover:underline cursor-pointer"
             onClick={() => {setOpen(false);scrollToSection("courses")}}
           >
-            Courses
+            <Link to={"/#courses"}>Courses</Link>
           </li>
          
-          <li  className="hover:underline cursor-pointer" onClick={() => {setOpen(false);scrollToSection("aboutUs")}}>About us</li>
-          <li  className="hover:underline cursor-pointer" onClick={() => {setOpen(false);scrollToSection("contactUs")}}>Contact us</li>
-          <li  className="hover:underline cursor-pointer" onClick={() => {setOpen(false);scrollToSection("FAQ")}}>FAQ</li>
+          <li  className="hover:underline cursor-pointer" onClick={() => {setOpen(false);scrollToSection("aboutUs")}}>
+            <Link to={"/#aboutUs"}>About us</Link>
+          </li>
+          <li  className="hover:underline cursor-pointer" onClick={() => {setOpen(false);scrollToSection("contactUs")}}>
+            <Link to={"/#contactUs"}>Contact Us</Link>
+          </li>
+          <li  className="hover:underline cursor-pointer" onClick={() => {setOpen(false);scrollToSection("FAQ")}}>
+            <Link to={"/#FAQ"}>FAQ</Link>
+          </li>
           <li  className="hover:underline cursor-pointer" > <Link to={"/blogs"}>  Blogs</Link></li>
           <li className="bg-[#C28336] p-3 text-sm rounded-full hover:underline cursor-pointer"  onClick={() =>{setOpen(false); scrollToSection("courses")}}>
-            Request For Demo Class
+            <Link to={"/#courses"}>Request a Demo</Link>
           </li>
         </ul>
         </div>
