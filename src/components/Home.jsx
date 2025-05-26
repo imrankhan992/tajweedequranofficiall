@@ -4,7 +4,6 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Helmet } from "react-helmet";
 
 import Layout from "./Layout/Layout";
 import WhatsAppButton from "./WhatsAppButton";
@@ -16,8 +15,14 @@ import StudentsReviews from "./StudentsReviews";
 import HowToEnroll from "./HowToEnroll";
 import ReasonPeopleChoseUs from "./ReasonPeopleChoseUs";
 import ContactUs from "./ContactUs";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
+
+
+  return (
+    <>
+      
  <Helmet>
         <title>Tajweed e Quran Official - Online Quran Courses</title>
         <meta
@@ -33,7 +38,10 @@ const Home = () => {
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tajweedequranofficial.com/" />
-        <meta property="og:title" content="Tajweed e Quran Official - Online Quran Courses" />
+        <meta
+          property="og:title"
+          content="Tajweed e Quran Official - Online Quran Courses"
+        />
         <meta
           property="og:description"
           content="Join certified Quran courses for kids & adults. Learn with male/female teachers."
@@ -45,7 +53,10 @@ const Home = () => {
 
         {/* Twitter Meta */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Tajweed e Quran Official - Online Quran Courses" />
+        <meta
+          name="twitter:title"
+          content="Tajweed e Quran Official - Online Quran Courses"
+        />
         <meta
           name="twitter:description"
           content="Flexible online Quran classes with expert teachers for all ages."
@@ -55,19 +66,6 @@ const Home = () => {
           content="https://tajweedequranofficial.com/Images/Blogs/TajweedeQuran.avif"
         />
       </Helmet>
-
-  return (
-    <>
-      <Helmet>
-        <title>Best Online Quran Academy | Learn Quran with Tajweed</title>
-        <meta
-          name="description"
-          content="Join the best online Quran academy for kids and adults. Learn Quran with proper Tajweed from qualified teachers. Start your free trial today!"
-        />
-        <meta name="keywords" content={pageKeywords} />
-        <link rel="canonical" href="https://yourdomain.com" />
-      </Helmet>
-
       <Layout className="relative w-full" id="home">
         {/* Floating action buttons */}
         <WhatsAppButton />
