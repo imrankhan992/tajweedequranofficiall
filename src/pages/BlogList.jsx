@@ -44,7 +44,9 @@ export default function BlogList() {
         <meta property="og:title" content="Tajweed e Quran Guides - Learn Quran Properly" />
         <meta property="og:description" content="Comprehensive Tajweed rules and Quran learning resources" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={window.location.href} />
+      <meta property="og:url" content={window.location.href} />
+      <link rel="canonical" href={`${window.location.origin}/blogs`} />
+
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

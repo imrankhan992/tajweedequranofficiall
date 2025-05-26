@@ -105,6 +105,8 @@ export default function BlogDetail() {
         <meta property="og:url" content={window.location.href} />
         <meta name="article:published_time" content={frontMatter.date} />
         <meta name="article:author" content={frontMatter.author} />
+          <link rel="canonical" href={`${window.location.origin}/blogs/${slug}`} />
+
         <script type="application/ld+json">
           {JSON.stringify(generateStructuredData())}
         </script>
